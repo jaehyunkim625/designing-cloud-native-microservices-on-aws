@@ -32,7 +32,7 @@ export class CoffeeShopCodePipeline extends cdk.Stack {
     constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
         super(scope, id, props);
 
-        // Create a VPC
+        // Create a VPC ...
         const vpc = new ec2.Vpc(this, 'CoffeeShopVPC', {
             cidr: '12.0.0.0/16',
             natGateways: 1
