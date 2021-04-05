@@ -66,7 +66,7 @@ export class EKSClusterStack extends cdk.Stack {
 	 * Add existing SSO role to masters role.
 	 * TODO: Parameterize.
 	 */
-		const ssoRole = 'arn:aws:iam::301391518739:role/aws-reserved/sso.amazonaws.com/ap-southeast-1/AWSReservedSSO_AdministratorAccess_961399e45c4f66a3';
+		const ssoRole = 'arn:aws:iam::599200593818:role/aws-reserved/sso.amazonaws.com/ap-southeast-1/AWSReservedSSO_AdministratorAccess_98f0eb4c83fab879';
 		this.addExistingRoleToMastersRole(eksCluster, ssoRole.split('/').pop() + '', ssoRole);
 
 
